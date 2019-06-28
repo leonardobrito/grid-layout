@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.start {
+  align-items: start;
+}
+
+.end {
+  align-items: end;
+}
+
+.center {
+  align-items: center;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.item-2,
+.item-3 {
+  grid-row: span 2;
+}
+
+.item-5 {
+  grid-column: span 2;
+}
