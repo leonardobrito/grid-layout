@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 50px);
+}
+
+.item-2,
+.item-3 {
+  grid-row: span 2;
+}
+
+.item-5 {
+  grid-column: span 2;
+}
+
+.start .item-2 {
+  align-self: start;
+}
+
+.start .item-5 {
+  align-self: start;
+}
+
+.end .item-2 {
+  align-self: end;
+}
+
+.end .item-5 {
+  align-self: end;
+}
+
+.center .item-2 {
+  align-self: center;
+}
+
+.center .item-5 {
+  align-self: center;
+}
+
+.stretch {
+  align-items: start;
+}
+
+.stretch .item-2 {
+  align-self: stretch;
+}
+
+.stretch .item-5 {
+  align-self: stretch;
+}
